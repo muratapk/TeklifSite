@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TeklifSite.Models
 {
@@ -20,6 +21,7 @@ namespace TeklifSite.Models
         public int? CategoryId { get; set; }
         virtual public Category Category { get; set; }
         virtual public List<Offers>?Offers { get; set; }
-
+        [NotMapped]
+        public IFormFile ImageUpload { get; set; }
     }
 }

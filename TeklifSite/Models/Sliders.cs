@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TeklifSite.Models
 {
@@ -11,5 +12,7 @@ namespace TeklifSite.Models
         public string Heeader2 { get; set; } = string.Empty;
         public string Context { get; set; } = string.Empty;
         public string SliderImage { get; set; } = string.Empty;
+        [NotMapped]
+        public IFormFile ImageUpload { get; set; }
     }
 }
