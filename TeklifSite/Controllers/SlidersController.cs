@@ -68,7 +68,7 @@ namespace TeklifSite.Controllers
                 {
                     ImageUpload.CopyToAsync(stream);
                 }
-                products.ProductPicture = yeniisim;
+                sliders.SliderName = yeniisim;
             }
 
 
@@ -117,7 +117,7 @@ namespace TeklifSite.Controllers
                 {
                     ImageUpload.CopyToAsync(stream);
                 }
-                products.ProductPicture = yeniisim;
+                sliders.SliderName = yeniisim;
             }
 
 

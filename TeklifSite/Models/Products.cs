@@ -19,9 +19,9 @@ namespace TeklifSite.Models
         public decimal? ProductPrice { get; set; }
 
         public int? CategoryId { get; set; }
-        virtual public Category Category { get; set; }
-        virtual public List<Offers>?Offers { get; set; }
+        virtual public Category? Category { get; set; }
+        virtual public List<Offers>? Offers { get; set; }
         [NotMapped]
-        public IFormFile ImageUpload { get; set; }
+        public IFormFile? ImageUpload { get; set; }
     }
 }

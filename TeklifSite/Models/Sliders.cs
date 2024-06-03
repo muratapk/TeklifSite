@@ -13,6 +13,6 @@ namespace TeklifSite.Models
         public string Context { get; set; } = string.Empty;
         public string SliderImage { get; set; } = string.Empty;
         [NotMapped]
-        public IFormFile ImageUpload { get; set; }
+        public IFormFile? ImageUpload { get; set; }
     }
 }
